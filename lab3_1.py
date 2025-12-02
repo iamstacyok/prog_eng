@@ -64,4 +64,3 @@ st.subheader("Результаты:")
 st.dataframe(result)
 
 st.info(f"Всего погибших мужчин старше {age_limit} лет: {len(filtered)}")
-
