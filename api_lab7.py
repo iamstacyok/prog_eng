@@ -14,7 +14,7 @@ generator = pipeline("text-generation", model="ai-forever/rugpt3small_based_on_g
 def root():
     return {"message": "privet mir and lab7"}
 
-@app.get("/generate")
+@app.post("/generate")
 def generate(item: Item):
     result = generator(
         item.prompt,
